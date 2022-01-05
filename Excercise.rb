@@ -114,6 +114,27 @@ class Excercise
        difference = num-33
        puts "#{difference*2}"
    end
+   def max_number
+       first_num=12
+       second_num=8
+       maximum = first_num > second_num ? first_num : second_num
+       puts "Maximum: #{maximum}"
+   end
+   def sum_number(num1,num2)
+       return num1==20 || num2==20 || num1+num2==20
+   end
+   def greatest_number
+        num1=20
+        num2=10
+        num3=50
+        if num1 >= num2 && num1 >= num3
+            puts "#{num1} is greater"
+        elsif num2 >= num1 && num2 >= num3
+            puts "#{num2} is greater"
+        elsif num3 >= num1 && num3 >= num2
+            puts "#{num3} is greater"
+        end   
+   end
    def switch
         puts "1.Version and Patch level"
         puts "2.Date and Time"
@@ -132,6 +153,9 @@ class Excercise
         puts "15.String exchanged"
         puts "16.Age validation"
         puts "17.Absolute difference"
+        puts "18.Maximum number"
+        puts "19.Sum of Number"
+        puts "20.Greater Number"
         puts "Enter your choice:"
         ch=gets.chomp.to_i
         case ch
@@ -173,6 +197,12 @@ class Excercise
                 comparision
             when 17
                 absolute_difference
+            when 18
+                max_number
+            when 19
+                puts sum_number(10,20)
+            when 20
+                greatest_number
         else
            puts "Invalid value"
         end
