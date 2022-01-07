@@ -1,0 +1,40 @@
+body {
+    background-color: lightblue;
+    margin:100px 406px; padding:0px;
+    text-align:center;
+    padding: auto;
+}
+  
+  h1 {
+    color: white;
+    }
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  legend {
+          display: block;
+          padding-left: 2px;
+          padding-right: 2px;
+          border: none;
+  }
+  fieldset{
+    margin:100px 0px; padding: 57px;
+    width: 500px;
+  }
+  label,input {
+    display: block;
+    width: 150px;
+    float: left;
+    margin-bottom: 10px;
+   }
+   
+   label {
+    text-align: right;
+    width: 75px;
+    padding-right: 20px;
+   }
+   
+   br {
+    clear: left;
+   }
